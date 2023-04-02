@@ -9,7 +9,6 @@ function Home() {
     <div>
       <Nav />
       <div className=" md:grid grid-cols-3 lg:grid-cols-5 px-8 py-5">
-        {/* <Card /> */}
         {quizes.map((quiz, i) => {
           return (
             <Link to="quiz">

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import quizNightLogo from "../assets/quizNightLogo.png";
 
 function Nav() {
@@ -9,9 +10,11 @@ function Nav() {
           <img width={50} src={quizNightLogo} />
           <h4 className="text-2xl font-bold text-slate-900">Quiz Night</h4>
         </div>
-        <div className="bg-slate-600 hover:bg-slate-100 transition-all duration-300 p-2 rounded-lg text-white hover:text-slate-900 font-bold shadow-md cursor-pointer">
-          About Us
-        </div>
+        <Link to="about">
+          <div className="bg-slate-600 hover:bg-slate-100 transition-all duration-300 p-2 rounded-lg text-white hover:text-slate-900 font-bold shadow-md cursor-pointer">
+            About Us
+          </div>
+        </Link>
       </div>
     </>
   );
